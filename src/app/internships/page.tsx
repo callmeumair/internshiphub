@@ -5,6 +5,7 @@ import Navigation from '../../components/Navigation'
 import { MagnifyingGlassIcon } from '@heroicons/react/24/outline'
 import CategoryFilter from '@/components/CategoryFilter'
 import { categories } from '@/data/categories'
+import { motion } from 'framer-motion'
 
 // Mock data for internships
 const internships = [
@@ -16,6 +17,20 @@ const internships = [
     type: 'FULL_TIME',
     duration: '3 months',
     skills: ['JavaScript', 'React', 'Node.js'],
+    applicationSettings: {
+      deadline: '2024-06-30',
+      requirements: [
+        'Currently pursuing a degree in Computer Science or related field',
+        'Strong problem-solving skills',
+        'Experience with web development',
+      ],
+      benefits: [
+        'Competitive stipend',
+        'Mentorship program',
+        'Flexible work hours',
+        'Networking opportunities',
+      ],
+    },
   },
   {
     id: 2,
@@ -25,6 +40,19 @@ const internships = [
     type: 'REMOTE',
     duration: '6 months',
     skills: ['Digital Marketing', 'Social Media', 'Content Creation'],
+    applicationSettings: {
+      deadline: '2024-07-15',
+      requirements: [
+        'Marketing or Communications major preferred',
+        'Strong written and verbal communication skills',
+        'Social media management experience',
+      ],
+      benefits: [
+        'Monthly stipend',
+        'Professional development workshops',
+        'Remote work setup allowance',
+      ],
+    },
   },
   {
     id: 3,
@@ -34,6 +62,20 @@ const internships = [
     type: 'HYBRID',
     duration: '4 months',
     skills: ['Python', 'Machine Learning', 'Data Analysis'],
+    applicationSettings: {
+      deadline: '2024-06-15',
+      requirements: [
+        'Background in Statistics, Mathematics, or Computer Science',
+        'Experience with Python and data analysis libraries',
+        'Strong analytical thinking',
+      ],
+      benefits: [
+        'Competitive compensation',
+        'Access to company resources',
+        'Hybrid work model',
+        'Career development sessions',
+      ],
+    },
   },
 ]
 
@@ -103,9 +145,12 @@ export default function Internships() {
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {filteredInternships.map((internship) => (
-            <div
+            <motion.div
               key={internship.id}
-              className="rounded-lg bg-white dark:bg-gray-800 p-6 shadow-sm ring-1 ring-gray-900/5 dark:ring-gray-700"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="rounded-lg bg-white dark:bg-gray-800 p-6 shadow-sm ring-1 ring-gray-900/5 dark:ring-gray-700 hover:shadow-lg transition-shadow duration-300"
             >
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
                 {internship.title}
@@ -123,18 +168,62 @@ export default function Internships() {
                   </span>
                 ))}
               </div>
-              <div className="mt-4 flex items-center justify-between">
-                <span className="text-sm text-gray-500 dark:text-gray-400">
+              
+              <div className="mt-4 space-y-2">
+                <div className="flex items-center text-sm text-gray-500 dark:text-gray-400">
+                  <svg className="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  </svg>
+                  Deadline: {new Date(internship.applicationSettings.deadline).toLocaleDateString()}
+                </div>
+                <div className="flex items-center text-sm text-gray-500 dark:text-gray-400">
+                  <svg className="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
                   {internship.duration}
+                </div>
+              </div>
+
+              <div className="mt-4">
+                <h4 className="text-sm font-medium text-gray-900 dark:text-white mb-2">Requirements:</h4>
+                <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-1">
+                  {internship.applicationSettings.requirements.map((req, index) => (
+                    <li key={index} className="flex items-start">
+                      <svg className="h-4 w-4 text-indigo-500 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                      {req}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="mt-4">
+                <h4 className="text-sm font-medium text-gray-900 dark:text-white mb-2">Benefits:</h4>
+                <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-1">
+                  {internship.applicationSettings.benefits.map((benefit, index) => (
+                    <li key={index} className="flex items-start">
+                      <svg className="h-4 w-4 text-indigo-500 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                      {benefit}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="mt-6 flex items-center justify-between">
+                <span className="text-sm text-gray-500 dark:text-gray-400">
+                  {internship.type}
                 </span>
                 <button
                   type="button"
-                  className="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                  className="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition-all duration-300 hover:scale-105"
                 >
                   Apply Now
                 </button>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
 

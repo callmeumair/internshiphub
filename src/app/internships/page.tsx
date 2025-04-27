@@ -18,122 +18,66 @@ const categories = [
 const internships = [
   {
     id: '1',
-    title: 'Software Development Intern',
+    title: 'Software Development',
     description: 'Join our team as a software development intern and work on cutting-edge projects.',
     company: 'Development',
     location: 'Remote',
-    startDate: '2024-06-01',
-    endDate: '2024-08-31',
     tags: ['Software Development', 'Development'],
-    requirements: ['JavaScript', 'React', 'Node.js'],
-    responsibilities: ['Develop web applications', 'Write clean code', 'Collaborate with team'],
-    benefits: ['Mentorship', 'Flexible hours', 'Stipend'],
-    salary: '$25/hour',
-    applicationDeadline: '2024-05-15',
-    createdAt: '2024-04-01',
-    updatedAt: '2024-04-01',
+    applyLink: 'https://docs.google.com/forms/d/e/1FAIpQLScGELiCeX6MlgrUAN0YV66uSFvi9uMFuCL1A4RHeuWyynIzlg/viewform?usp=header'
   },
   {
     id: '2',
-    title: 'Web Development Intern',
+    title: 'Web Development',
     description: 'Learn and build modern web applications using the latest technologies.',
     company: 'Development',
     location: 'Remote',
-    startDate: '2024-06-01',
-    endDate: '2024-08-31',
     tags: ['Web Development', 'Development'],
-    requirements: ['HTML', 'CSS', 'JavaScript'],
-    responsibilities: ['Build responsive websites', 'Implement UI/UX designs'],
-    benefits: ['Mentorship', 'Flexible hours', 'Stipend'],
-    salary: '$25/hour',
-    applicationDeadline: '2024-05-15',
-    createdAt: '2024-04-01',
-    updatedAt: '2024-04-01',
+    applyLink: 'https://docs.google.com/forms/d/e/1FAIpQLScGELiCeX6MlgrUAN0YV66uSFvi9uMFuCL1A4RHeuWyynIzlg/viewform?usp=header'
   },
   {
     id: '3',
-    title: 'Full Stack Development Intern',
+    title: 'Full Stack Development',
     description: 'Work on both frontend and backend development of modern web applications.',
     company: 'Development',
     location: 'Remote',
-    startDate: '2024-06-01',
-    endDate: '2024-08-31',
     tags: ['Full Stack Development', 'Development'],
-    requirements: ['JavaScript', 'React', 'Node.js', 'MongoDB'],
-    responsibilities: ['Full stack development', 'API integration', 'Database design'],
-    benefits: ['Mentorship', 'Flexible hours', 'Stipend'],
-    salary: '$25/hour',
-    applicationDeadline: '2024-05-15',
-    createdAt: '2024-04-01',
-    updatedAt: '2024-04-01',
+    applyLink: 'https://docs.google.com/forms/d/e/1FAIpQLScGELiCeX6MlgrUAN0YV66uSFvi9uMFuCL1A4RHeuWyynIzlg/viewform?usp=header'
   },
   {
     id: '4',
-    title: 'Mobile App Development Intern',
+    title: 'Mobile App Development',
     description: 'Develop cross-platform mobile applications using modern frameworks.',
     company: 'Development',
     location: 'Remote',
-    startDate: '2024-06-01',
-    endDate: '2024-08-31',
     tags: ['Mobile App Development', 'Development'],
-    requirements: ['React Native', 'JavaScript', 'Mobile Development'],
-    responsibilities: ['Mobile app development', 'UI/UX implementation', 'Testing'],
-    benefits: ['Mentorship', 'Flexible hours', 'Stipend'],
-    salary: '$25/hour',
-    applicationDeadline: '2024-05-15',
-    createdAt: '2024-04-01',
-    updatedAt: '2024-04-01',
+    applyLink: 'https://docs.google.com/forms/d/e/1FAIpQLScGELiCeX6MlgrUAN0YV66uSFvi9uMFuCL1A4RHeuWyynIzlg/viewform?usp=header'
   },
   {
     id: '5',
-    title: 'UI/UX Design Intern',
+    title: 'UI/UX Design',
     description: 'Create beautiful and intuitive user interfaces for web and mobile applications.',
     company: 'Development',
     location: 'Remote',
-    startDate: '2024-06-01',
-    endDate: '2024-08-31',
     tags: ['UI/UX Design', 'Development'],
-    requirements: ['Figma', 'Adobe XD', 'UI/UX Principles'],
-    responsibilities: ['Design interfaces', 'Create prototypes', 'User research'],
-    benefits: ['Mentorship', 'Flexible hours', 'Stipend'],
-    salary: '$25/hour',
-    applicationDeadline: '2024-05-15',
-    createdAt: '2024-04-01',
-    updatedAt: '2024-04-01',
+    applyLink: 'https://docs.google.com/forms/d/e/1FAIpQLScGELiCeX6MlgrUAN0YV66uSFvi9uMFuCL1A4RHeuWyynIzlg/viewform?usp=header'
   },
   {
     id: '6',
-    title: 'Front End Development Intern',
+    title: 'Frontend Development',
     description: 'Build responsive and interactive user interfaces using modern frameworks.',
     company: 'Development',
     location: 'Remote',
-    startDate: '2024-06-01',
-    endDate: '2024-08-31',
-    tags: ['Front End Development', 'Development'],
-    requirements: ['HTML', 'CSS', 'JavaScript', 'React'],
-    responsibilities: ['Frontend development', 'UI implementation', 'Performance optimization'],
-    benefits: ['Mentorship', 'Flexible hours', 'Stipend'],
-    salary: '$25/hour',
-    applicationDeadline: '2024-05-15',
-    createdAt: '2024-04-01',
-    updatedAt: '2024-04-01',
+    tags: ['Frontend Development', 'Development'],
+    applyLink: 'https://docs.google.com/forms/d/e/1FAIpQLScGELiCeX6MlgrUAN0YV66uSFvi9uMFuCL1A4RHeuWyynIzlg/viewform?usp=header'
   },
   {
     id: '7',
-    title: 'Flutter Development Intern',
+    title: 'Flutter',
     description: 'Develop cross-platform mobile applications using Flutter framework.',
     company: 'Development',
     location: 'Remote',
-    startDate: '2024-06-01',
-    endDate: '2024-08-31',
     tags: ['Flutter', 'Development'],
-    requirements: ['Dart', 'Flutter', 'Mobile Development'],
-    responsibilities: ['Flutter app development', 'State management', 'Testing'],
-    benefits: ['Mentorship', 'Flexible hours', 'Stipend'],
-    salary: '$25/hour',
-    applicationDeadline: '2024-05-15',
-    createdAt: '2024-04-01',
-    updatedAt: '2024-04-01',
+    applyLink: 'https://docs.google.com/forms/d/e/1FAIpQLScGELiCeX6MlgrUAN0YV66uSFvi9uMFuCL1A4RHeuWyynIzlg/viewform?usp=header'
   }
 ];
 
@@ -203,14 +147,28 @@ export default function InternshipsPage() {
         {/* Internships Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredInternships.map((internship) => (
-            <InternshipCard
+            <motion.div
               key={internship.id}
-              internship={internship}
-              onClick={() => {
-                // Handle click on internship card
-                console.log('Clicked on internship:', internship.id);
-              }}
-            />
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              className="bg-gray-800 rounded-lg overflow-hidden"
+            >
+              <div className="p-6">
+                <h2 className="text-2xl font-bold mb-2">{internship.title}</h2>
+                <p className="text-gray-300 mb-4">{internship.description}</p>
+                <div className="flex items-center justify-between">
+                  <span className="text-gray-400">{internship.company} • {internship.location}</span>
+                  <motion.button
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    onClick={() => window.open(internship.applyLink, '_blank')}
+                    className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors"
+                  >
+                    Apply Now
+                  </motion.button>
+                </div>
+              </div>
+            </motion.div>
           ))}
         </div>
 

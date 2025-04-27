@@ -1,28 +1,31 @@
 'use client';
 
-import { useState } from 'react';
+import React, { useState } from 'react';
 import InternshipCard from '@/components/InternshipCard';
 import CategoryFilter from '@/components/CategoryFilter';
+import { motion } from 'framer-motion';
 
 const categories = [
   { id: 'development', name: 'Development' },
   { id: 'data', name: 'Data' },
   { id: 'business', name: 'Business' },
-  { id: 'design', name: 'Design' },
-  { id: 'engineering', name: 'Engineering' },
+  { id: 'data-visualization', name: 'Data Visualization' },
+  { id: 'programming', name: 'Programming' },
+  { id: 'iot', name: 'Internet Of Things' },
   { id: 'miscellaneous', name: 'Miscellaneous' },
 ];
 
 const internships = [
+  // Development
   {
     id: '1',
     title: 'Software Development Intern',
     description: 'Join our team as a software development intern and work on cutting-edge projects.',
-    company: 'Tech Corp',
+    company: 'Development',
     location: 'Remote',
     startDate: '2024-06-01',
     endDate: '2024-08-31',
-    tags: ['Web Development', 'Full Stack', 'React'],
+    tags: ['Software Development', 'Development'],
     requirements: ['JavaScript', 'React', 'Node.js'],
     responsibilities: ['Develop web applications', 'Write clean code', 'Collaborate with team'],
     benefits: ['Mentorship', 'Flexible hours', 'Stipend'],
@@ -31,7 +34,24 @@ const internships = [
     createdAt: '2024-04-01',
     updatedAt: '2024-04-01',
   },
-  // Add more internship data here
+  {
+    id: '2',
+    title: 'Web Development Intern',
+    description: 'Learn and build modern web applications using the latest technologies.',
+    company: 'Development',
+    location: 'Remote',
+    startDate: '2024-06-01',
+    endDate: '2024-08-31',
+    tags: ['Web Development', 'Development'],
+    requirements: ['HTML', 'CSS', 'JavaScript'],
+    responsibilities: ['Build responsive websites', 'Implement UI/UX designs'],
+    benefits: ['Mentorship', 'Flexible hours', 'Stipend'],
+    salary: '$25/hour',
+    applicationDeadline: '2024-05-15',
+    createdAt: '2024-04-01',
+    updatedAt: '2024-04-01',
+  },
+  // Add more internships following the same pattern...
 ];
 
 export default function InternshipsPage() {
@@ -49,7 +69,7 @@ export default function InternshipsPage() {
   });
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-900 text-white pt-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <h1 className="text-3xl font-bold mb-8">Find Your Perfect Internship</h1>
         
@@ -59,7 +79,7 @@ export default function InternshipsPage() {
             <input
               type="text"
               placeholder="Search internships..."
-              className="flex-grow px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              className="flex-grow px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />
@@ -70,6 +90,32 @@ export default function InternshipsPage() {
             />
           </div>
         </div>
+
+        {/* AutoCad Section */}
+        <motion.div
+          whileHover={{ scale: 1.02 }}
+          whileTap={{ scale: 0.98 }}
+          className="mb-8 cursor-pointer"
+          onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLScGELiCeX6MlgrUAN0YV66uSFvi9uMFuCL1A4RHeuWyynIzlg/viewform?usp=header', '_blank')}
+        >
+          <div className="bg-gray-800 rounded-lg overflow-hidden">
+            <img
+              src="/autocad-banner.jpg"
+              alt="AutoCad Internship"
+              className="w-full h-48 object-cover"
+            />
+            <div className="p-6">
+              <h2 className="text-2xl font-bold mb-2">AutoCad Internship</h2>
+              <p className="text-gray-300 mb-4">Join our AutoCad internship program and gain hands-on experience in CAD design and drafting.</p>
+              <div className="flex items-center text-blue-400">
+                <span>Apply Now</span>
+                <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </motion.div>
 
         {/* Internships Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -88,7 +134,7 @@ export default function InternshipsPage() {
         {/* No Results Message */}
         {filteredInternships.length === 0 && (
           <div className="text-center py-12">
-            <p className="text-gray-600 text-lg">No internships found matching your criteria.</p>
+            <p className="text-gray-400 text-lg">No internships found matching your criteria.</p>
             <p className="text-gray-500">Try adjusting your filters or search query.</p>
           </div>
         )}

@@ -133,7 +133,7 @@ export default function Contact() {
                     </div>
                     <div className="ml-3">
                       <p className="text-sm font-medium text-green-800 dark:text-green-200">
-                        Message sent successfully! We'll get back to you soon.
+                        Message sent successfully! We&apos;ll get back to you soon.
                       </p>
                     </div>
                   </div>

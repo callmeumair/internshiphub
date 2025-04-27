@@ -96,7 +96,7 @@ export default function InternshipsPage() {
   });
 
   return (
-    <div className="min-h-screen bg-gray-900 text-white pt-16">
+    <div className="min-h-screen bg-white text-black pt-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <h1 className="text-3xl font-bold mb-8">Find Your Perfect Internship</h1>
         
@@ -106,7 +106,7 @@ export default function InternshipsPage() {
             <input
               type="text"
               placeholder="Search internships..."
-              className="flex-grow px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white"
+              className="flex-grow px-4 py-2 bg-gray-100 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />
@@ -151,18 +151,18 @@ export default function InternshipsPage() {
               key={internship.id}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="bg-gray-800 rounded-lg overflow-hidden"
+              className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow"
             >
               <div className="p-6">
                 <h2 className="text-2xl font-bold mb-2">{internship.title}</h2>
-                <p className="text-gray-300 mb-4">{internship.description}</p>
+                <p className="text-gray-700 mb-4">{internship.description}</p>
                 <div className="flex items-center justify-between">
-                  <span className="text-gray-400">{internship.company} • {internship.location}</span>
+                  <span className="text-gray-500">{internship.company} • {internship.location}</span>
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     onClick={() => window.open(internship.applyLink, '_blank')}
-                    className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors"
+                    className="bg-black text-white px-4 py-2 rounded-md hover:bg-gray-800 transition-colors"
                   >
                     Apply Now
                   </motion.button>
@@ -175,7 +175,7 @@ export default function InternshipsPage() {
         {/* No Results Message */}
         {filteredInternships.length === 0 && (
           <div className="text-center py-12">
-            <p className="text-gray-400 text-lg">No internships found matching your criteria.</p>
+            <p className="text-gray-600 text-lg">No internships found matching your criteria.</p>
             <p className="text-gray-500">Try adjusting your filters or search query.</p>
           </div>
         )}

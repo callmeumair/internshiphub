@@ -31,8 +31,7 @@ export default function Home() {
               className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300"
             >
               Discover opportunities, gain experience, and build your career with InternshipHub.
-              We connect talented individuals with top companies and provide certification programs
-              to boost your professional growth.
+              We connect talented individuals with top companies to help you grow professionally.
             </motion.p>
             <motion.div 
               initial={{ opacity: 0, y: 20 }}

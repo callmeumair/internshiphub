@@ -20,7 +20,6 @@ model User {
   updatedAt     DateTime  @updatedAt
   internships   Internship[]
   applications  Application[]
-  certifications Certification[]
 }
 
 model Internship {
@@ -49,16 +48,6 @@ model Application {
   internshipId String
   user        User      @relation(fields: [userId], references: [id])
   internship  Internship @relation(fields: [internshipId], references: [id])
-}
-
-model Certification {
-  id          String    @id @default(cuid())
-  title       String
-  description String
-  issuer      String
-  dateEarned  DateTime
-  userId      String
-  user        User      @relation(fields: [userId], references: [id])
 }
 
 enum Role {

@@ -132,6 +132,186 @@ const internships = [
     location: 'Remote',
     tags: ['Business Intelligence', 'Data'],
     applyLink: 'https://docs.google.com/forms/d/e/1FAIpQLScGELiCeX6MlgrUAN0YV66uSFvi9uMFuCL1A4RHeuWyynIzlg/viewform?usp=header'
+  },
+  {
+    id: '14',
+    title: 'Marketing',
+    description: 'Learn and apply marketing strategies in a real-world business environment.',
+    company: 'Business',
+    location: 'Remote',
+    tags: ['Marketing', 'Business'],
+    applyLink: 'https://docs.google.com/forms/d/e/1FAIpQLScGELiCeX6MlgrUAN0YV66uSFvi9uMFuCL1A4RHeuWyynIzlg/viewform?usp=header'
+  },
+  {
+    id: '15',
+    title: 'Digital Marketing',
+    description: 'Master digital marketing techniques including SEO, social media, and content marketing.',
+    company: 'Business',
+    location: 'Remote',
+    tags: ['Digital Marketing', 'Business'],
+    applyLink: 'https://docs.google.com/forms/d/e/1FAIpQLScGELiCeX6MlgrUAN0YV66uSFvi9uMFuCL1A4RHeuWyynIzlg/viewform?usp=header'
+  },
+  {
+    id: '16',
+    title: 'Business Development',
+    description: 'Work on business growth strategies and client relationship management.',
+    company: 'Business',
+    location: 'Remote',
+    tags: ['Business Development', 'Business'],
+    applyLink: 'https://docs.google.com/forms/d/e/1FAIpQLScGELiCeX6MlgrUAN0YV66uSFvi9uMFuCL1A4RHeuWyynIzlg/viewform?usp=header'
+  },
+  {
+    id: '17',
+    title: 'Finance',
+    description: 'Gain experience in financial analysis, budgeting, and investment strategies.',
+    company: 'Business',
+    location: 'Remote',
+    tags: ['Finance', 'Business'],
+    applyLink: 'https://docs.google.com/forms/d/e/1FAIpQLScGELiCeX6MlgrUAN0YV66uSFvi9uMFuCL1A4RHeuWyynIzlg/viewform?usp=header'
+  },
+  {
+    id: '18',
+    title: 'Operations',
+    description: 'Learn about business operations management and process optimization.',
+    company: 'Business',
+    location: 'Remote',
+    tags: ['Operations', 'Business'],
+    applyLink: 'https://docs.google.com/forms/d/e/1FAIpQLScGELiCeX6MlgrUAN0YV66uSFvi9uMFuCL1A4RHeuWyynIzlg/viewform?usp=header'
+  },
+  {
+    id: '19',
+    title: 'Human Resource',
+    description: 'Work on recruitment, employee relations, and HR management.',
+    company: 'Business',
+    location: 'Remote',
+    tags: ['Human Resource', 'Business'],
+    applyLink: 'https://docs.google.com/forms/d/e/1FAIpQLScGELiCeX6MlgrUAN0YV66uSFvi9uMFuCL1A4RHeuWyynIzlg/viewform?usp=header'
+  },
+  {
+    id: '20',
+    title: 'Data Analysis using MS Excel',
+    description: 'Master data analysis techniques using Microsoft Excel.',
+    company: 'Data Visualization',
+    location: 'Remote',
+    tags: ['Data Analysis', 'Data Visualization'],
+    applyLink: 'https://docs.google.com/forms/d/e/1FAIpQLScGELiCeX6MlgrUAN0YV66uSFvi9uMFuCL1A4RHeuWyynIzlg/viewform?usp=header'
+  },
+  {
+    id: '21',
+    title: 'Power BI',
+    description: 'Learn to create interactive dashboards and reports using Power BI.',
+    company: 'Data Visualization',
+    location: 'Remote',
+    tags: ['Power BI', 'Data Visualization'],
+    applyLink: 'https://docs.google.com/forms/d/e/1FAIpQLScGELiCeX6MlgrUAN0YV66uSFvi9uMFuCL1A4RHeuWyynIzlg/viewform?usp=header'
+  },
+  {
+    id: '22',
+    title: 'Tableau',
+    description: 'Develop skills in data visualization using Tableau software.',
+    company: 'Data Visualization',
+    location: 'Remote',
+    tags: ['Tableau', 'Data Visualization'],
+    applyLink: 'https://docs.google.com/forms/d/e/1FAIpQLScGELiCeX6MlgrUAN0YV66uSFvi9uMFuCL1A4RHeuWyynIzlg/viewform?usp=header'
+  },
+  {
+    id: '23',
+    title: 'Business Analytics',
+    description: 'Apply analytics to solve business problems and drive decision making.',
+    company: 'Data Visualization',
+    location: 'Remote',
+    tags: ['Business Analytics', 'Data Visualization'],
+    applyLink: 'https://docs.google.com/forms/d/e/1FAIpQLScGELiCeX6MlgrUAN0YV66uSFvi9uMFuCL1A4RHeuWyynIzlg/viewform?usp=header'
+  },
+  {
+    id: '24',
+    title: 'Data Reporting',
+    description: 'Learn to create comprehensive data reports and presentations.',
+    company: 'Data Visualization',
+    location: 'Remote',
+    tags: ['Data Reporting', 'Data Visualization'],
+    applyLink: 'https://docs.google.com/forms/d/e/1FAIpQLScGELiCeX6MlgrUAN0YV66uSFvi9uMFuCL1A4RHeuWyynIzlg/viewform?usp=header'
+  },
+  {
+    id: '25',
+    title: 'Financial Data',
+    description: 'Work with financial data visualization and analysis.',
+    company: 'Data Visualization',
+    location: 'Remote',
+    tags: ['Financial Data', 'Data Visualization'],
+    applyLink: 'https://docs.google.com/forms/d/e/1FAIpQLScGELiCeX6MlgrUAN0YV66uSFvi9uMFuCL1A4RHeuWyynIzlg/viewform?usp=header'
+  },
+  {
+    id: '26',
+    title: 'Healthcare Data',
+    description: 'Analyze and visualize healthcare data for insights.',
+    company: 'Data Visualization',
+    location: 'Remote',
+    tags: ['Healthcare Data', 'Data Visualization'],
+    applyLink: 'https://docs.google.com/forms/d/e/1FAIpQLScGELiCeX6MlgrUAN0YV66uSFvi9uMFuCL1A4RHeuWyynIzlg/viewform?usp=header'
+  },
+  {
+    id: '27',
+    title: 'Java Developer',
+    description: 'Develop applications using Java programming language.',
+    company: 'Programming',
+    location: 'Remote',
+    tags: ['Java', 'Programming'],
+    applyLink: 'https://docs.google.com/forms/d/e/1FAIpQLScGELiCeX6MlgrUAN0YV66uSFvi9uMFuCL1A4RHeuWyynIzlg/viewform?usp=header'
+  },
+  {
+    id: '28',
+    title: 'Python Developer',
+    description: 'Build applications and scripts using Python programming language.',
+    company: 'Programming',
+    location: 'Remote',
+    tags: ['Python', 'Programming'],
+    applyLink: 'https://docs.google.com/forms/d/e/1FAIpQLScGELiCeX6MlgrUAN0YV66uSFvi9uMFuCL1A4RHeuWyynIzlg/viewform?usp=header'
+  },
+  {
+    id: '29',
+    title: 'JavaScript Developer',
+    description: 'Create interactive web applications using JavaScript.',
+    company: 'Programming',
+    location: 'Remote',
+    tags: ['JavaScript', 'Programming'],
+    applyLink: 'https://docs.google.com/forms/d/e/1FAIpQLScGELiCeX6MlgrUAN0YV66uSFvi9uMFuCL1A4RHeuWyynIzlg/viewform?usp=header'
+  },
+  {
+    id: '30',
+    title: '.NET Developer',
+    description: 'Develop applications using the .NET framework.',
+    company: 'Programming',
+    location: 'Remote',
+    tags: ['.NET', 'Programming'],
+    applyLink: 'https://docs.google.com/forms/d/e/1FAIpQLScGELiCeX6MlgrUAN0YV66uSFvi9uMFuCL1A4RHeuWyynIzlg/viewform?usp=header'
+  },
+  {
+    id: '31',
+    title: 'iOS Developer',
+    description: 'Create iOS applications using Swift and Objective-C.',
+    company: 'Programming',
+    location: 'Remote',
+    tags: ['iOS', 'Programming'],
+    applyLink: 'https://docs.google.com/forms/d/e/1FAIpQLScGELiCeX6MlgrUAN0YV66uSFvi9uMFuCL1A4RHeuWyynIzlg/viewform?usp=header'
+  },
+  {
+    id: '32',
+    title: 'C/C++ Developer',
+    description: 'Work on system-level programming using C and C++.',
+    company: 'Programming',
+    location: 'Remote',
+    tags: ['C/C++', 'Programming'],
+    applyLink: 'https://docs.google.com/forms/d/e/1FAIpQLScGELiCeX6MlgrUAN0YV66uSFvi9uMFuCL1A4RHeuWyynIzlg/viewform?usp=header'
+  },
+  {
+    id: '33',
+    title: 'Embedded Systems',
+    description: 'Develop and program embedded systems for IoT applications.',
+    company: 'Internet Of Things',
+    location: 'Remote',
+    tags: ['Embedded Systems', 'Internet Of Things'],
+    applyLink: 'https://docs.google.com/forms/d/e/1FAIpQLScGELiCeX6MlgrUAN0YV66uSFvi9uMFuCL1A4RHeuWyynIzlg/viewform?usp=header'
   }
 ];
 

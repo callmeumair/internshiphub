@@ -4,7 +4,6 @@ import { useState, useMemo } from 'react'
 import Navigation from '../../components/Navigation'
 import { MagnifyingGlassIcon } from '@heroicons/react/24/outline'
 import CategoryFilter from '@/components/CategoryFilter'
-import { categories } from '@/data/categories'
 import { motion } from 'framer-motion'
 import { InternshipCard } from '@/components/InternshipCard'
 import { internships } from '@/data/internships'
@@ -12,7 +11,6 @@ import { Internship } from '@/types/internship'
 
 export default function InternshipsPage() {
   const [searchTerm, setSearchTerm] = useState('')
-  const [selectedType, setSelectedType] = useState('')
   const [selectedCategory, setSelectedCategory] = useState('')
   const [selectedSubcategory, setSelectedSubcategory] = useState('')
 

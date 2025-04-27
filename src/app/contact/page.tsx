@@ -194,6 +194,10 @@ export default function Contact() {
               </div>
             </div>
           </div>
+
+          <p className="text-gray-600">
+            We&apos;re here to help you find the perfect internship opportunity.
+          </p>
         </motion.div>
       </div>
     </main>

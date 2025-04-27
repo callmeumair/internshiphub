@@ -16,8 +16,8 @@ export default function SignIn() {
     try {
       // TODO: Implement actual authentication
       console.log('Sign in attempt:', { email, password })
-    } catch (err) {
-      setError('Invalid email or password')
+    } catch {
+      setError('Failed to sign in. Please try again.')
     }
   }
 

@@ -30,7 +30,7 @@ export default function SignUp() {
     try {
       // TODO: Implement actual registration
       console.log('Sign up attempt:', formData)
-    } catch (err) {
+    } catch {
       setError('Failed to create account. Please try again.')
     }
   }

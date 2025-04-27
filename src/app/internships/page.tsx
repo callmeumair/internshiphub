@@ -78,6 +78,60 @@ const internships = [
     location: 'Remote',
     tags: ['Flutter', 'Development'],
     applyLink: 'https://docs.google.com/forms/d/e/1FAIpQLScGELiCeX6MlgrUAN0YV66uSFvi9uMFuCL1A4RHeuWyynIzlg/viewform?usp=header'
+  },
+  {
+    id: '8',
+    title: 'Data Science',
+    description: 'Work on data analysis, machine learning, and statistical modeling projects.',
+    company: 'Data',
+    location: 'Remote',
+    tags: ['Data Science', 'Data'],
+    applyLink: 'https://docs.google.com/forms/d/e/1FAIpQLScGELiCeX6MlgrUAN0YV66uSFvi9uMFuCL1A4RHeuWyynIzlg/viewform?usp=header'
+  },
+  {
+    id: '9',
+    title: 'Data Analysis using Python',
+    description: 'Learn and apply Python for data analysis and visualization.',
+    company: 'Data',
+    location: 'Remote',
+    tags: ['Data Analysis', 'Data'],
+    applyLink: 'https://docs.google.com/forms/d/e/1FAIpQLScGELiCeX6MlgrUAN0YV66uSFvi9uMFuCL1A4RHeuWyynIzlg/viewform?usp=header'
+  },
+  {
+    id: '10',
+    title: 'Machine Learning',
+    description: 'Develop and implement machine learning models for real-world applications.',
+    company: 'Data',
+    location: 'Remote',
+    tags: ['Machine Learning', 'Data'],
+    applyLink: 'https://docs.google.com/forms/d/e/1FAIpQLScGELiCeX6MlgrUAN0YV66uSFvi9uMFuCL1A4RHeuWyynIzlg/viewform?usp=header'
+  },
+  {
+    id: '11',
+    title: 'Computer Vision',
+    description: 'Work on image processing and computer vision applications.',
+    company: 'Data',
+    location: 'Remote',
+    tags: ['Computer Vision', 'Data'],
+    applyLink: 'https://docs.google.com/forms/d/e/1FAIpQLScGELiCeX6MlgrUAN0YV66uSFvi9uMFuCL1A4RHeuWyynIzlg/viewform?usp=header'
+  },
+  {
+    id: '12',
+    title: 'Data Engineering',
+    description: 'Build and maintain data pipelines and infrastructure.',
+    company: 'Data',
+    location: 'Remote',
+    tags: ['Data Engineering', 'Data'],
+    applyLink: 'https://docs.google.com/forms/d/e/1FAIpQLScGELiCeX6MlgrUAN0YV66uSFvi9uMFuCL1A4RHeuWyynIzlg/viewform?usp=header'
+  },
+  {
+    id: '13',
+    title: 'Business Intelligence',
+    description: 'Analyze business data and create insights for decision making.',
+    company: 'Data',
+    location: 'Remote',
+    tags: ['Business Intelligence', 'Data'],
+    applyLink: 'https://docs.google.com/forms/d/e/1FAIpQLScGELiCeX6MlgrUAN0YV66uSFvi9uMFuCL1A4RHeuWyynIzlg/viewform?usp=header'
   }
 ];
 

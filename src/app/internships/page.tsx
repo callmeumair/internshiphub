@@ -336,7 +336,7 @@ export default function InternshipsPage() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-4xl font-bold mb-8 bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent"
+          className="text-3xl sm:text-4xl font-bold mb-8 text-center bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent"
         >
           Find Your Perfect Internship
         </motion.h1>
@@ -346,7 +346,7 @@ export default function InternshipsPage() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="mb-8"
+          className="mb-8 max-w-3xl mx-auto"
         >
           <div className="flex flex-col md:flex-row gap-4 mb-6">
             <input
@@ -371,7 +371,7 @@ export default function InternshipsPage() {
           transition={{ duration: 0.5, delay: 0.3 }}
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
-          className="mb-8 cursor-pointer"
+          className="mb-8 cursor-pointer max-w-3xl mx-auto"
           onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLScGELiCeX6MlgrUAN0YV66uSFvi9uMFuCL1A4RHeuWyynIzlg/viewform?usp=header', '_blank')}
         >
           <div className="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
@@ -381,9 +381,9 @@ export default function InternshipsPage() {
               className="w-full h-48 object-cover"
             />
             <div className="p-6">
-              <h2 className="text-2xl font-bold mb-2 text-white">AutoCad Internship</h2>
-              <p className="text-gray-300 mb-4">Join our AutoCad internship program and gain hands-on experience in CAD design and drafting.</p>
-              <div className="flex items-center text-purple-400 hover:text-purple-300 transition-colors duration-300">
+              <h2 className="text-2xl font-bold mb-2 text-white text-center">AutoCad Internship</h2>
+              <p className="text-gray-300 mb-4 text-center">Join our AutoCad internship program and gain hands-on experience in CAD design and drafting.</p>
+              <div className="flex items-center justify-center text-purple-400 hover:text-purple-300 transition-colors duration-300">
                 <span>Apply Now</span>
                 <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -398,7 +398,7 @@ export default function InternshipsPage() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.4 }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto"
         >
           {filteredInternships.map((internship, index) => (
             <motion.div
@@ -411,15 +411,15 @@ export default function InternshipsPage() {
               className="bg-gray-800 border border-gray-700 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
             >
               <div className="p-6">
-                <h2 className="text-2xl font-bold mb-2 text-white">{internship.title}</h2>
-                <p className="text-gray-300 mb-4">{internship.description}</p>
-                <div className="flex items-center justify-between">
-                  <span className="text-gray-400">{internship.company} • {internship.location}</span>
+                <h2 className="text-2xl font-bold mb-2 text-white text-center">{internship.title}</h2>
+                <p className="text-gray-300 mb-4 text-center">{internship.description}</p>
+                <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+                  <span className="text-gray-400 text-center sm:text-left">{internship.company} • {internship.location}</span>
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     onClick={() => window.open(internship.applyLink, '_blank')}
-                    className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-2 rounded-md hover:from-purple-600 hover:to-pink-600 transition-all duration-300"
+                    className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-2 rounded-md hover:from-purple-600 hover:to-pink-600 transition-all duration-300 w-full sm:w-auto text-center"
                   >
                     Apply Now
                   </motion.button>
@@ -435,7 +435,7 @@ export default function InternshipsPage() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
-            className="text-center py-12"
+            className="text-center py-12 max-w-3xl mx-auto"
           >
             <p className="text-gray-400 text-lg">No internships found matching your criteria.</p>
             <p className="text-gray-500">Try adjusting your filters or search query.</p>

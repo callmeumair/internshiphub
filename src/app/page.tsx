@@ -17,14 +17,14 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/internships"
-                className="bg-white text-black px-8 py-3 rounded-lg font-semibold hover:bg-gray-800 hover:text-white transition-colors flex items-center justify-center border border-white"
+                className="bg-black text-white px-8 py-3 rounded-lg font-semibold border border-white hover:bg-gray-800 hover:text-white transition-colors flex items-center justify-center"
               >
                 Browse Internships
                 <ArrowRightIcon className="ml-2 h-5 w-5" />
               </Link>
               <Link
                 href="/auth/signup"
-                className="bg-black border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-black transition-colors"
+                className="bg-black border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-800 hover:text-white transition-colors"
               >
                 Sign Up
               </Link>
@@ -72,7 +72,7 @@ export default function Home() {
             ].map((category) => (
               <div
                 key={category.title}
-                className="bg-gray-900 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+                className="bg-black border border-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow"
               >
                 <div className="text-4xl mb-4">{category.icon}</div>
                 <h3 className="text-xl font-semibold mb-2 text-white">{category.title}</h3>

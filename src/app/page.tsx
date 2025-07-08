@@ -3,28 +3,28 @@ import { ArrowRightIcon } from '@heroicons/react/24/outline';
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-black text-white">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+      <section className="bg-black text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white">
               Find Your Dream Internship
             </h1>
-            <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-gray-300">
               Discover and apply for internships across various domains including Software Development, Data Science, Business, and more.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/internships"
-                className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors flex items-center justify-center"
+                className="bg-white text-black px-8 py-3 rounded-lg font-semibold hover:bg-gray-800 hover:text-white transition-colors flex items-center justify-center border border-white"
               >
                 Browse Internships
                 <ArrowRightIcon className="ml-2 h-5 w-5" />
               </Link>
               <Link
                 href="/auth/signup"
-                className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors"
+                className="bg-black border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-black transition-colors"
               >
                 Sign Up
               </Link>
@@ -34,9 +34,9 @@ export default function Home() {
       </section>
 
       {/* Categories Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center mb-12">Popular Categories</h2>
+          <h2 className="text-3xl font-bold text-center mb-12 text-white">Popular Categories</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
@@ -72,11 +72,11 @@ export default function Home() {
             ].map((category) => (
               <div
                 key={category.title}
-                className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+                className="bg-gray-900 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow"
               >
                 <div className="text-4xl mb-4">{category.icon}</div>
-                <h3 className="text-xl font-semibold mb-2">{category.title}</h3>
-                <p className="text-gray-600">{category.description}</p>
+                <h3 className="text-xl font-semibold mb-2 text-white">{category.title}</h3>
+                <p className="text-gray-300">{category.description}</p>
               </div>
             ))}
           </div>
@@ -84,9 +84,9 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section className="py-16">
+      <section className="py-16 bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center mb-12">Why Choose InternshipHub?</h2>
+          <h2 className="text-3xl font-bold text-center mb-12 text-white">Why Choose InternshipHub?</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
@@ -110,8 +110,8 @@ export default function Home() {
                 className="text-center"
               >
                 <div className="text-4xl mb-4">{feature.icon}</div>
-                <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
-                <p className="text-gray-600">{feature.description}</p>
+                <h3 className="text-xl font-semibold mb-2 text-white">{feature.title}</h3>
+                <p className="text-gray-300">{feature.description}</p>
               </div>
             ))}
           </div>
